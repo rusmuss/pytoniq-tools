@@ -97,7 +97,7 @@ class TransferJettonData:
             self,
             destination: Union[Address, str],
             jetton_master_address: Union[Address, str],
-            jetton_amount: Union[int, float],
+            jetton_amount: int,
             forward_payload: Optional[Union[Cell, str]] = Cell.empty(),
             forward_amount: Optional[int, float] = 0.001,
             amount: Union[int, float] = 0.05,

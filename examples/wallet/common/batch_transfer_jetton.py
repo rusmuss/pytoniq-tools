@@ -17,25 +17,25 @@ async def main() -> None:
             TransferJettonData(
                 destination="UQ...",
                 jetton_master_address="EQ...",
-                jetton_amount=0.01,
+                jetton_amount=1,
                 forward_payload="Hello from pytoniq-tools!",
             ),
             TransferJettonData(
                 destination="UQ...",
                 jetton_master_address="EQ...",
-                jetton_amount=0.02,
+                jetton_amount=2,
                 forward_payload="Hello from pytoniq-tools!",
             ),
             TransferJettonData(
                 destination="UQ...",
                 jetton_master_address="EQ...",
-                jetton_amount=0.03,
+                jetton_amount=3,
                 forward_payload="Hello from pytoniq-tools!",
             ),
             TransferJettonData(
                 destination="UQ...",
                 jetton_master_address="EQ...",
-                jetton_amount=0.04,
+                jetton_amount=4,
                 forward_payload="Hello from pytoniq-tools!",
             ),
         ]
