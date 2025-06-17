@@ -438,7 +438,7 @@ class Wallet(Contract):
             self,
             destination: Union[Address, str],
             jetton_master_address: Union[Address, str],
-            jetton_amount: Union[int, float],
+            jetton_amount: int,
             forward_payload: Optional[Cell, str] = Cell.empty(),
             forward_amount: Optional[int, float] = 0.001,
             amount: Optional[Union[int, float]] = 0.05,
@@ -481,7 +481,7 @@ class Wallet(Contract):
             body=Jetton.build_transfer_body(
                 recipient_address=destination,
                 response_address=self.address,
-                jetton_amount=amount_to_nano(jetton_amount),
+                jetton_amount=jetton_amount,
                 forward_payload=forward_payload,
                 forward_amount=amount_to_nano(forward_amount),
             )
@@ -516,7 +516,7 @@ class Wallet(Contract):
                     body=Jetton.build_transfer_body(
                         recipient_address=data.destination,
                         response_address=self.address,
-                        jetton_amount=amount_to_nano(data.jetton_amount),
+                        jetton_amount=data.jetton_amount,
                         forward_payload=data.forward_payload,
                         forward_amount=amount_to_nano(data.forward_amount),
                     ),

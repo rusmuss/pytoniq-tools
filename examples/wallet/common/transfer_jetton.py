@@ -14,7 +14,7 @@ async def main() -> None:
     tx_hash = await wallet.transfer_jetton(
         destination="UQ...",
         jetton_master_address="EQ...",
-        jetton_amount=0.01,
+        jetton_amount=1,
         forward_payload="Hello from pytoniq-tools!"
     )
 
